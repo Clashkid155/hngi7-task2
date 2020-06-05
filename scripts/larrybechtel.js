@@ -1,6 +1,10 @@
 var name = "Ibrahim Ajala";
 var ID = "HNG-05288";
+<<<<<<< HEAD
 var email = "larrybechtel396@gmail.com";
+=======
+var email = "larrybechtel396@gmail.com"
+>>>>>>> 69158bc... Fixed some script
 var lang = "Javascript";
     
 
