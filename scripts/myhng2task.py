@@ -1,4 +1,3 @@
-
 full_name = "Ayeni Racheal"
 hng_id = "HNG-05163"
 language = "python"
