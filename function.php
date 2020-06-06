@@ -33,6 +33,11 @@ function fetch_data()
     return $first_array;
 }
 
+//Count current amount of submitted file
+function sub_count() {
+    $coun = count (glob ("scripts/*.{php,py,js}", GLOB_BRACE));
+    return $coun;
+}
 
 
 function get_string_data($str, $starting_word, $ending_word)

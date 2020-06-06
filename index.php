@@ -4,14 +4,16 @@ error_reporting(0);
 
 
 include("function.php");
-// testing Last updated time
+// Last updated time and total scripts
 ud_time();
 $update_time = $last_ud_time;
+$con = sub_count();
 
 $baseDir = 'scripts';
 $files = scandir($baseDir, 1);
 array_splice($files, count($files) - 2, 2);
 $first_array = [];
+
 // ID Message Status
 
 
@@ -118,6 +120,7 @@ if (isset($_GET["json"])) {
         <div class="container mt-5">
             <h4>RESULT</h4>
             <h5>Last Updated: <?php echo $update_time; ?></h5>
+            <h5>Number of scripts processed: <?php echo $con;?></h5>
 
             <div class="row">
             </div>
