@@ -27,7 +27,7 @@ if (isset($_GET["json"])) {
         }
     }
 
-    echo json_encode($pass_array);
+    echo json_encode($pass_array, JSON_PRETTY_PRINT);
 } else { 
     
 //get the current page number
