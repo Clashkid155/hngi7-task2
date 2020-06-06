@@ -4,7 +4,9 @@ error_reporting(0);
 
 
 include("function.php");
-
+// testing Last updated time
+ud_time();
+$update_time = $last_ud_time;
 
 $baseDir = 'scripts';
 $files = scandir($baseDir, 1);
@@ -115,6 +117,7 @@ if (isset($_GET["json"])) {
         </div>
         <div class="container mt-5">
             <h4>RESULT</h4>
+            <h5>Last Updated: <?php echo $update_time; ?></h5>
 
             <div class="row">
             </div>

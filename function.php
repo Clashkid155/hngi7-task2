@@ -58,6 +58,19 @@ function get_email($str)
     return $result;
 }
 
+function ud_time()
+{
+    global $baseDir;
+    global $last_ud_time;
+    //$cur_date = "date +%a %m %Y %-I:%M %#p-r ";
+    $script = shell_exec('date "+%a-%m %-I:%M%p" -r scripts');
+    if ($script == $last_ud_time) {
+    } else {
+        $last_ud_time = $script;
+    }
+
+}
+
 function set_array($message, $file)
 {
     global $first_array;
